@@ -4,6 +4,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<style>
+	.header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #dedede;
+            padding: 10px 60px;
+        }
+	</style>
 	<title>Login Crunchii</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,7 +34,6 @@
 <!--===============================================================================================-->
 </head>
 <body>
-	
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 			<div class="wrap-login100 p-t-30 p-b-50">
@@ -46,11 +54,18 @@
 					<div class="container-login100-form-btn m-t-32">
 						<button class="login100-form-btn" type="submit" name="Signin">Login</button>
 					</div>
+					<div>
+						<h5 style="text-align:center; padding-top:10px; color:gray;">untuk list akun scroll kebawah</h5>
+					</div>
 				</form>
 			</div>
 		</div>
 	</div>
-	
+	<section>
+    <div class="header">
+        <a href="loginform.php" style="width:50%; margin-left:25%; margin-right:25%;"><button class="login100-form-btn" style="width:50%; margin-left:25%; margin-right:25%;">List Login</button></a>
+    </div>
+	</section>
 	<?php
 	
 	if(isset($_POST['Signin'])){
@@ -67,8 +82,6 @@
 	}
 	
 	?>
-
-
 
 
 	<div id="dropDownSelect1"></div>
