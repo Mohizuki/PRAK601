@@ -6,7 +6,8 @@ function tampildata($nama_tabel)
     $stmt = koneksi()->prepare("SELECT * FROM $nama_tabel");
     $stmt->execute();
     $result = $stmt->fetchAll();
-
+    session_start();
+    
     if (!empty($result)) {
         if ($nama_tabel == "member") {
             foreach ($result as $row) {
